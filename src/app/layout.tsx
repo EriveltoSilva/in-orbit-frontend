@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"], // Subconjuntos da fonte que você quer carregar
+  variable: "--font-inter", // Variável CSS para usar na aplicação
+});
 
 export const metadata: Metadata = {
   title: "in-orbit",
@@ -13,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-ao">
-      <body className={`h-screen bg-zinc-950 text-zinc-300 antialiased`}>{children}</body>
+      <body className={`${inter.className} h-screen bg-zinc-950 text-zinc-300 antialiased`}>{children}</body>
     </html>
   );
 }
