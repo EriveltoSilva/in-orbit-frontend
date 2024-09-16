@@ -11,6 +11,7 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: "in-orbit",
   description: "Gerenciador de Metas",
+  icons: "/logo.svg",
 };
 
 export default function RootLayout({
