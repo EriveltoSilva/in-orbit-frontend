@@ -4,7 +4,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 const inter = Inter({
-  subsets: ["latin"], // Subconjuntos da fonte que você quer carregar
+  subsets: ["latin"], // Subconjuntos da fonte
   variable: "--font-inter", // Variável CSS para usar na aplicação
 });
 
