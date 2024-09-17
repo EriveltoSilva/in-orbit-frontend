@@ -1,8 +1,6 @@
 import { Plus } from "lucide-react";
 import Image from "next/image";
 
-import { CreateGoal } from "../create-goal";
-
 import letStartImage from "@/assets/images/lets-start.png";
 import logo from "@/assets/images/logo.svg";
 
@@ -24,7 +22,7 @@ export const Empty = () => {
           Cadastrar meta
         </button>
       </main>
-      <CreateGoal />
+      {/* <CreateGoal /> */}
     </>
   );
 };

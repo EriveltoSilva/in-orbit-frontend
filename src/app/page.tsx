@@ -1,7 +1,9 @@
 import { Empty } from "@/components/empty";
 import { GoalsList } from "@/components/goals-list";
+import { getPendingGoals } from "./actions";
 
-export default function Home() {
-  const goals = [0];
-  return <>{goals.length === 0 ? <Empty /> : <GoalsList goals={[""]} />}</>;
+export default async function Home() {
+  const goals = await getPendingGoals();
+
+  return <>{!goals || goals?.length == 0 ? <Empty /> : <GoalsList goals={goals} />}</>;
 }

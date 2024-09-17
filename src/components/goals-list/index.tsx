@@ -3,10 +3,15 @@ import Image from "next/image";
 import { CheckCircle2, Plus } from "lucide-react";
 
 import logo from "@/assets/images/logo.svg";
+import { GoalEntity } from "@/types/goals";
 import { Divider } from "../Divider";
 import { ProgressBar } from "../ProgressBar";
 
-export const GoalsList = ({ goals }: { goals: string[] }) => {
+export const GoalsList = ({ goals }: { goals: GoalEntity[] }) => {
+  console.log("--------------------------------");
+  console.log(goals);
+  console.log("--------------------------------");
+
   return (
     <main className="h-full py-10 flex flex-col gap-8 items-center">
       <div className="w-[480px] space-y-6">
